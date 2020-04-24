@@ -25,7 +25,7 @@
         <button v-if="page > 1" @click="goBack"> Prev </button>
         <button v-if="page < total / 10" @click="goForward">Next</button>
       </div>
-      <div>Page {{ page }} of {{ Math.ceil(total / 10) }}</div>
+      <div v-if="ships.length > 0">Page {{ page }} of {{ Math.ceil(total / 10) }}</div>
     </div>
   </div>
 </template>
