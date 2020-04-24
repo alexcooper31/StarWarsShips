@@ -25,6 +25,7 @@
         <button v-if="page > 1" @click="goBack"> Prev </button>
         <button v-if="page < total / 10" @click="goForward">Next</button>
       </div>
+      <div>Page {{ page }} of {{ Math.ceil(total / 10) }}</div>
     </div>
   </div>
 </template>
@@ -50,6 +51,7 @@ export default Vue.extend({
   },
   methods: {
     async callShips(page: number) {
+      if (page === 1) this.page = 1;
       this.loading = true;
       const data = await getShips(page);
       this.ships = data.results;
