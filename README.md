@@ -1,24 +1,32 @@
-# star_ships
+# Star Wars: Ships
+Calculate how many stops each ship has to make in onder to travel in a given distance amount.
 
-## Project setup
+## Run project Locally
+First **either** of the following commands to download the project dependencies:
 ```
-yarn install
+yarn
+```
+```
+npm install
 ```
 
-### Compiles and hot-reloads for development
+After that you can use **either** of the following commands to run the project locally:
+
 ```
 yarn serve
 ```
+```
+npm serve
+```
 
-### Compiles and minifies for production
+## Building the project
+
+To build the project, after downloading the dependencies, simply run either of the following commands:
+
 ```
 yarn build
 ```
-
-### Lints and fixes files
 ```
-yarn lint
+npm build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+A "dist" folder will be created with the built project.
