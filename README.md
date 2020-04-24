@@ -2,7 +2,7 @@
 Calculate how many stops each ship has to make in onder to travel in a given distance amount.
 
 ## Run project Locally
-First **either** of the following commands to download the project dependencies:
+First run **either** of the following commands to download the project dependencies:
 ```
 yarn
 ```
